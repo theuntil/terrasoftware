@@ -95,7 +95,7 @@ className="container text-center">
 
 <span className="absolute -z-10 top-2 -left-6 -right-4 bottom-0.5 bg-foreground/5
 rounded-full px-8 ms-3 border-t border-foreground/20 shadow-[inset_0px_0px_30px_0px]
- shadow-foreground/20 md:top-3 md:bottom-1 lg:top-4 lg:top-4 m lg-bottom-2"></span>
+ shadow-foreground/20 md:top-3 md:bottom-1  lg:top-4 m lg-bottom-2"></span>
 
 </span>
     </motion.h2>

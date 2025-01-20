@@ -19,7 +19,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-
+import { Link } from 'react-router-dom';
 
 
 // Asesets 
@@ -96,7 +96,7 @@ className={navigationMenuTriggerStyle()}>
 
 <div className=" flex items-center gap-2 justify-end max-lg:hidden">
 
-<Button>İletişime geç🎉</Button>
+<Button><Link to="/iletisim" className="block w-full h-full text-center">İletişime geç</Link></Button>
 
 </div>
 

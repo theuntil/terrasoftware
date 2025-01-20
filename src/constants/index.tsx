@@ -40,44 +40,79 @@ export const navMenu: MenuItem[] = [
     label: 'Çözümlerimiz',
   },
   {
-    href: 'fiyatlar',
-    label: 'Fiyatlar',
+    href: 'ucretler',
+    label: 'Ücretler',
   },
   {
     href: '/referans',
     label: 'Referanslarımız',
-    // submenu: [
-    //   {
-    //     href: '#',
-    //     icon: <Terminal />,
-    //     label: 'Getting Started',
-    //     desc: 'Powerful options to securely authenticate and manage',
-    //   },
-    //   {
-    //     href: '#',
-    //     icon: <Package />,
-    //     label: 'Core Concepts',
-    //     desc: 'Add-on features built specifically for B2B applications',
-    //   },
-    //   {
-    //     href: '#',
-    //     icon: <SquareMousePointer />,
-    //     label: 'Customization',
-    //     desc: 'Embeddable prebuilt UI components for quick and seamless integrations',
-    //   },
-    //   {
-    //     href: '#',
-    //     icon: <Blocks />,
-    //     label: 'Official Plugins',
-    //     desc: 'The fastest and most seamless authentication solution for Next.js',
-    //   },
-    // ],
+  
   },
   {
     href: 'hakkimizda',
     label: 'Hakkımızda',
   },
 ];
+
+
+// Ücretler
+export const Ucretler = [
+  {
+    name: "Başlangıç",
+    description: "İşinizi tanıtmak için uygun bir paket",
+    btnText: 'Şimdi Satın al',
+    price: 4800,
+    features: [
+      "50GB Hosting",
+      "Google SEO Optimizasyonu",
+      "Sosyal medya Yönetimi",
+      "Günlük Raporlama"
+    ],
+    color: "#78e3fc"
+  },
+  {
+    name: "Profesyonel",
+    description: "Daha fazla özellik ve destek sunan premium paket",
+    btnText: 'Hemen Başla',
+    price: 9500,
+    features: [
+      "100GB Hosting",
+      "SEO Danışmanlık",
+      "Reklam Kampanyaları Yönetimi",
+      "Sosyal Medya Raporlama",
+      "Özel Destek Hattı"
+    ],
+    color: "#f7a1a1"
+  },
+  {
+    name: "Kurumsal",
+    description: "Büyük işletmeler için güçlü özellikler ve optimize çözümler",
+    btnText: 'Teklif Al',
+    price: 18500,
+    features: [
+      "500GB Hosting",
+      "Kurumsal SEO Çözümü",
+      "Sosyal Medya ve Blog Yönetimi",
+      "Özel Eğitim ve Danışmanlık",
+      "Gelişmiş Raporlama ve Analiz"
+    ],
+    color: "#a8d08d"
+  },
+  {
+    name: "Girişimci",
+    description: "Yeni başlayanlar için uygun fiyatlı temel paket",
+    btnText: 'Başla',
+    price: 2500,
+    features: [
+      "20GB Hosting",
+      "Temel SEO Hizmetleri",
+      "Sosyal Medya Takibi",
+      "Aylık E-posta Bülteni",
+    ],
+    color: "#f2e1c1"
+  }
+];
+
 
 // Hero
 export const heroData = {
@@ -256,115 +291,77 @@ export const ctaData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Hızlı Linkler',
       items: [
         {
-          href: '#',
-          label: 'Components',
+          href: '/cozumlerimiz',
+          label: 'Çözümlerimiz',
         },
         {
-          href: '#',
-          label: 'Pricing',
+          href: '/ucretler',
+          label: 'Ücretler',
         },
         {
-          href: '#',
-          label: 'Dashboard',
+          href: '/referans',
+          label: 'Referanslarımız',
         },
         {
-          href: '#',
-          label: 'Feature requests',
+          href: '/ucretler',
+          label: 'Ücretler',
         },
+      
       ],
     },
+  
     {
-      title: 'Developers',
+      title: 'Şirketimiz',
       items: [
         {
-          href: '#',
-          label: 'Documentation',
+          href: '/hakkimizda',
+          label: 'Hakkımızda',
         },
         {
           href: '#',
-          label: 'Discord server',
+          label: 'Ekibimize katılın',
         },
+    
         {
-          href: '#',
-          label: 'Support',
-        },
-        {
-          href: '#',
-          label: 'Glossary',
-        },
-        {
-          href: '#',
-          label: 'Changelog',
-        },
-      ],
-    },
-    {
-      title: 'Company',
-      items: [
-        {
-          href: '#',
-          label: 'About',
-        },
-        {
-          href: '#',
-          label: 'Careers',
-        },
-        {
-          href: '#',
-          label: 'Blog',
-        },
-        {
-          href: '#',
-          label: 'Contact',
+          href: '/iletisim',
+          label: 'İletişim',
         },
       ],
     },
     {
       title: 'Legal',
       items: [
+
         {
-          href: '#',
-          label: 'Terms and Conditions',
+          href: '/Politikalar/Gizlilik',
+          label: 'Gizlilik Politikası',
         },
         {
-          href: '#',
-          label: 'Privacy Policy',
+          href: '/Politikalar/Gizlilik',
+          label: 'Satış Politikası',
         },
-        {
-          href: '#',
-          label: 'Data Processing Agreement',
-        },
-        {
-          href: '#',
-          label: 'Cookie manager',
-        },
+        
       ],
     },
   ],
-  copyright: '© 2024 codewithsadee',
+  copyright: '© 2025 @thehref',
   socialLinks: [
+
     {
-      href: 'https://x.com/codewithsadee_',
-      icon: <Twitter size={18} />,
-    },
-    {
-      href: 'https://github.com/codewithsadee',
+      href: 'https://github.com/theuntil',
       icon: <Github size={18} />,
     },
     {
-      href: 'https://www.linkedin.com/in/codewithsadee/',
+      href: 'https://www.linkedin.com/in/terrasoftware/',
       icon: <Linkedin size={18} />,
     },
     {
-      href: 'https://www.instagram.com/codewithsadee',
+      href: 'https://www.instagram.com/terrasoftware',
       icon: <Instagram size={18} />,
     },
-    {
-      href: 'https://www.youtube.com/codewithsadee',
-      icon: <Youtube size={18} />,
-    },
+    
   ],
 };

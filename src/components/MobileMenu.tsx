@@ -3,6 +3,8 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { MenuItem } from '@/types';
 import { Separator } from '@/components/ui/separator';
 import { ChevronsUpDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 
 type MobileMenuProps = {
   navMenu: MenuItem[];
@@ -47,7 +49,8 @@ const MobileMenu = ({ navMenu }: MobileMenuProps) => {
 
       <div className="flex items-center gap-2 mt-4">
         
-        <Button  className='w-full'>İletişime geç</Button>
+        <Button  className='w-full'><Link to="/iletisim" className="block w-full h-full text-center">İletişim</Link>
+        </Button>
       </div>
     </div>
   );
