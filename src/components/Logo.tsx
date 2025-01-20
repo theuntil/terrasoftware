@@ -1,5 +1,3 @@
-import React from 'react';
-
 /**
  * @copyright 2025 @thehref
  * @license Apache-2.0

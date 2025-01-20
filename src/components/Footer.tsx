@@ -26,7 +26,7 @@ const Footer = () => {
     <p className="mb-4">{title}</p>
 
 
-    {items.map(({href,label},index)  =>(
+    {items.map(({href,label})  =>(
 
 
 <li key={href} className='text-muted-foreground'>

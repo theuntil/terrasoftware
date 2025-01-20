@@ -15,11 +15,9 @@ import {
   LaptopMinimal,
   ArrowBigDownDash,
   CreditCard,
-  Twitter,
   Github,
   Linkedin,
   Instagram,
-  Youtube,
 } from 'lucide-react';
 
 import {
