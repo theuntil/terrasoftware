@@ -42,11 +42,6 @@ export const navMenu: MenuItem[] = [
     label: 'Ücretler',
   },
   {
-    href: '/referans',
-    label: 'Referanslarımız',
-  
-  },
-  {
     href: 'hakkimizda',
     label: 'Hakkımızda',
   },
@@ -115,8 +110,8 @@ export const Ucretler = [
 // Hero
 export const heroData = {
   sectionSubtitle: 'YENİDEN BAŞLAYIN',
-  sectionTitle: "Haydi gelin dijital dünya da birlikte",
-  decoTitle: "büyüyelim🚀",
+  sectionTitle: "Dijital dünyada işinizi birlikte",
+  decoTitle: "büyütelim🚀",
   sectionText:
     'Siz büyümenin keyfini çıkarırken, biz de sizi nasıl daha ileriye taşıyabileceğimizi düşünelim. Sizin değil, bizim işimiz!',
 };
@@ -299,14 +294,7 @@ export const footerData = {
           href: '/ucretler',
           label: 'Ücretler',
         },
-        {
-          href: '/referans',
-          label: 'Referanslarımız',
-        },
-        {
-          href: '/ucretler',
-          label: 'Ücretler',
-        },
+      
       
       ],
     },
@@ -329,23 +317,9 @@ export const footerData = {
         },
       ],
     },
-    {
-      title: 'Legal',
-      items: [
-
-        {
-          href: '/Politikalar/Gizlilik',
-          label: 'Gizlilik Politikası',
-        },
-        {
-          href: '/Politikalar/Gizlilik',
-          label: 'Satış Politikası',
-        },
-        
-      ],
-    },
+    
   ],
-  copyright: '© 2025 @thehref',
+  copyright: '©2025 Powered by AdnanÖZEN',
   socialLinks: [
 
     {

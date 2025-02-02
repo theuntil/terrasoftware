@@ -18,6 +18,7 @@ import Cozum from '@/pages/cozum';
 import Hakkimizda from '@/pages/hakkimizda';
 import Referans from '@/pages/referans';
 import Ucret from '@/pages/ucretler';
+import P404 from '@/pages/p404';
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
     <Route path='/referans' element={<Referans/>} />
     <Route path='/cozumlerimiz' element={<Cozum/>} />
     <Route path='/hakkimizda' element={<Hakkimizda/>} />
+    <Route path='*' element={<P404/>} />
 
   </Routes>
   <Footer/>

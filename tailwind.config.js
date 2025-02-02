@@ -1,3 +1,4 @@
+import { space } from "postcss/lib/list";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
@@ -10,6 +11,8 @@ export default {
   theme: {
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
+      space: ["Space Grotesk", "sans"],
+      gotik: ["League Script", "serif"],
     },
     extend: {
       borderRadius: {
