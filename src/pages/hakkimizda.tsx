@@ -1,8 +1,5 @@
 import { useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Cozum from "@/assets/cozum.jpg";
-import Ekip from "@/assets/ekip.jpg";
-import Guvenlik from "@/assets/guvenlik.jpg";
+
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
