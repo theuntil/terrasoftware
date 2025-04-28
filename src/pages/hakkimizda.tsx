@@ -1,22 +1,10 @@
-import { useRef } from 'react';
+
 
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  const scrollLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
-    }
-  };
+  
 
   return (
     <div className="bg-background text-foreground min-h-screen flex flex-col items-center py-10">
