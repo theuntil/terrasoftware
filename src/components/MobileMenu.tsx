@@ -11,8 +11,8 @@ type MobileMenuProps = {
 
 const MobileMenu = ({ navMenu }: MobileMenuProps) => {
   return (
-    <div className="bg-white text-foreground p-4 rounded-2xl">
-      <ul className="mb-3">
+    <div className=" text-foreground p-3 rounded-2xl  w-full">
+      <ul className="mb-4">
         {navMenu.map(({ href, label, submenu }, index) => (
           <li key={index}>
             {submenu ? (
@@ -24,7 +24,7 @@ const MobileMenu = ({ navMenu }: MobileMenuProps) => {
                   </Button>
                 </CollapsibleTrigger>
                 <CollapsibleContent className='ps-2'>
-                  <ul className="border-l text-foreground border-gray-200">
+                  <ul className="border-l border-gray-200 text-foreground space-y-1 mt-1">
                     {submenu.map(({ href, label }, subIndex) => (
                       <li key={subIndex}>
                         <Button asChild variant='ghost' className='w-full justify-start text-foreground hover:bg-muted'>
@@ -46,7 +46,7 @@ const MobileMenu = ({ navMenu }: MobileMenuProps) => {
 
       <Separator className='bg-muted-foreground/20 my-4' />
 
-      <div className="flex items-center gap-2 mt-4">
+      <div className="flex items-center gap-2">
         <Button className='w-full'>
           <Link to="/iletisim" className="block w-full text-center">İletişim</Link>
         </Button>

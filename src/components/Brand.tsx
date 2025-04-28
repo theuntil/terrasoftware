@@ -23,7 +23,7 @@ viewport={{  once:true    }}
 className="text-center mb-4 md:mb-6">
     
     
-Referanslar</motion.p>
+Çözüm Ortaklarımız</motion.p>
 
 <motion.div  
 
@@ -40,9 +40,10 @@ className="flex justify-center flex-wrap gap-5 md:gap-10 ">
   <img 
     src={brand} 
     alt="brands"
-    className="opacity-[0.5] w-[100px] h-[100px] object-contain"  
+    className="w-[100px] h-[100px] object-contain filter brightness-0"  
   />
 </motion.figure>
+
 
 
 ))}

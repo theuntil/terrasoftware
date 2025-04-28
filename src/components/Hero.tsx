@@ -46,7 +46,6 @@ import { Button } from "@/components/ui/button";
 
 import { Dialog, DialogTrigger, DialogContent} from "@/components/ui/dialog";
 import  { AspectRatio } from  '@/components/ui/aspect-ratio';
-import ReactPlayer from "react-player/youtube";
 
 
 const heroVariant: Variants ={ start:{}, end:{ transition: {stagerChildren:0.4,  }} };
@@ -116,13 +115,7 @@ rounded-full px-8 ms-3 border-t border-foreground/20 shadow-[inset_0px_0px_30px_
 
 <DialogContent className="p-0 overflow-hidden max-w-[640px] xl:max-w-[1000px] " >
 <AspectRatio ratio={16 / 9} >
-<ReactPlayer url="https://music.youtube.com/watch?v=fXglXSAN0oE&si=q67HiH6ywV7NroiG" style={{
 
-    minWidth: "100%",
-    maxWidth:"100%",
-    minHeight:"100%",
-    maxHeight: "100%"
-}}/>
     </AspectRatio>
 
 </DialogContent>
@@ -138,7 +131,7 @@ rounded-full px-8 ms-3 border-t border-foreground/20 shadow-[inset_0px_0px_30px_
 
 <div className="relative mt-12 max-w-screen-xl mx-auto isolate rounded-xl md:mt-16">
 
-    <motion.figure className="bg-background/60 border border-slate-800 backdrop-blur-3xl rounded-xl shadow-2xl overflow-hidden" initial={{
+    <motion.figure className="bg-background/60  backdrop-blur-3xl rounded-3xl shadow-xl overflow-hidden" initial={{
 
         y:120,
         opacity:0,
@@ -172,7 +165,7 @@ filter:'blur(0px)',
 
     </motion.figure>
 
-    <motion.div className="absolute bg-primary inset-5 blur-[50px] -z-10 " initial={{
+    <motion.div className="absolute  inset-5 blur-[50px] -z-10 " initial={{
 scale:0.8,
 opacity:0
         
@@ -212,7 +205,7 @@ opacity:1,
      }}
      
      
-     className=" absolute inset-0 bg-primary blur-[200px] scale-y-75 scale-x-125 rounded-full -z-10 "></motion.div>
+     className=" absolute inset-0 bg-primary blur-[150px] scale-y-75 scale-x-125 rounded-full -z-10 "></motion.div>
 </div>   
 
 </motion.div>
