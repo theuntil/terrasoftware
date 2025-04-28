@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Beyaz Tema Değerleri */
+    --background: 0 0% 100%; /* Beyaz arka plan */
+    --foreground: 240 10% 3.9%; /* Koyu metin rengi */
+    --card: 0 0% 100%; /* Kartların arka planı */
+    --card-foreground: 240 10% 3.9%; /* Kart metin rengi */
+    --popover: 0 0% 100%; /* Popover arka planı */
+    --popover-foreground: 240 10% 3.9%; /* Popover metin rengi */
+    --primary: 240 5.9% 10%; /* Birincil renk (Koyu) */
+    --primary-foreground: 0 0% 98%; /* Birincil metin rengi (Beyaz) */
+    --secondary: 240 4.8% 95.9%; /* İkincil renk */
+    --secondary-foreground: 240 5.9% 10%; /* İkincil metin rengi */
+    --muted: 240 4.8% 95.9%; /* Yumuşak renk (gri tonları) */
+    --muted-foreground: 240 3.8% 46.1%; /* Yumuşak metin rengi */
+    --accent: 240 4.8% 95.9%; /* Vurgu rengi */
+    --accent-foreground: 240 5.9% 10%; /* Vurgu metin rengi */
+    --destructive: 0 84.2% 60.2%; /* Destrüktif renk (kırmızı) */
+    --destructive-foreground: 0 0% 98%; /* Destrüktif metin rengi (beyaz) */
+    --border: 240 5.9% 90%; /* Sınır rengi */
+    --input: 240 5.9% 90%; /* Giriş alanı rengi */
+    --ring: 240 10% 3.9%; /* Vurgulama halkası */
+    --chart-1: 12 76% 61%; /* Grafik rengi */
+    --chart-2: 173 58% 39%; /* Grafik rengi */
+    --chart-3: 197 37% 24%; /* Grafik rengi */
+    --chart-4: 43 74% 66%; /* Grafik rengi */
+    --chart-5: 27 87% 67%; /* Grafik rengi */
+    --radius: 0.5rem; /* Yuvarlak köşe yarıçapı */
+  }
+
+  /* Beyaz Tema için Dark Mode'u kaldırıyoruz */
+  .dark {
+    --background: 240 10% 100%; /* Beyaz arka plan */
+    --foreground: 0 0% 100%; /* Beyaz metin rengi */
+    --card: 240 10% 100%; /* Beyaz kart arka planı */
+    --card-foreground: 0 0% 100%; /* Beyaz kart metin rengi */
+    --popover: 240 10% 100%; /* Beyaz popover arka planı */
+    --popover-foreground: 0 0% 100%; /* Beyaz popover metin rengi */
+    --primary: 243.4 75.4% 58.6%; /* Açık birincil renk */
+    --primary-foreground: 0 0% 100%; /* Koyu birincil metin rengi */
+    --secondary: 240 5.9% 80%; /* Açık ikincil renk */
+    --secondary-foreground: 0 0% 20%; /* Koyu ikincil metin rengi */
+    --muted: 240 5% 80%; /* Açık gri yumuşak renk */
+    --muted-foreground: 240 5% 30%; /* Koyu gri yumuşak metin rengi */
+    --accent: 240 5.9% 80%; /* Açık vurgulama rengi */
+    --accent-foreground: 0 0% 20%; /* Koyu vurgu metin rengi */
+    --destructive: 0 62.8% 30.6%; /* Kırmızı tahrip edici renk */
+    --destructive-foreground: 0 0% 98%; /* Beyaz tahrip edici metin rengi */
+    --border: 240 5.9% 90%; /* Açık sınır rengi */
+    --input: 240 5.9% 90%; /* Giriş alanı rengi */
+    --ring: 240 10% 3.9%; /* Açık vurgulama halkası */
+    --chart-1: 220 100% 70%; /* Açık grafik rengi */
+    --chart-2: 340 100% 70%; /* Açık grafik rengi */
+    --chart-3: 30 80% 55%; /* Açık grafik rengi */
+    --chart-4: 280 65% 60%; /* Açık grafik rengi */
+    --chart-5: 160 60% 45%; /* Açık grafik rengi */
+  }
+}
+
+/* Genel stiller */
+@layer base {
+  *{
+    @apply border-border;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar-thumb {
+    @apply bg-foreground/20 rounded-full hover:bg-foreground/30;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply px-10 mx-auto 2xl:max-w-screen-xl;
+  }
+
+  .section {
+    @apply py-10;
+  }
+
+  .section-head {
+    @apply pb-8 text-center md:pb-16 lg:max-w-screen-sm lg:mx-auto;
+  }
+
+  .section-subtitle {
+    @apply text-primary text-sm font-medium uppercase;
+  }
+
+  .section-title {
+    @apply text-foreground text-3xl font-semibold leading-snug py-3 md:text-[40px];
+  }
+
+  .section-text {
+    @apply text-muted-foreground md:text-xl;
+  }
+}
