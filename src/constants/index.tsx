@@ -327,11 +327,11 @@ export const footerData = {
       icon: <Github size={18} />,
     },
     {
-      href: 'https://www.linkedin.com/in/terrasoftware/',
+      href: 'https://www.linkedin.com/in/terradijital/',
       icon: <Linkedin size={18} />,
     },
     {
-      href: 'https://www.instagram.com/terrasoftware',
+      href: 'https://www.instagram.com/terradijital/',
       icon: <Instagram size={18} />,
     },
     

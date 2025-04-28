@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 
 const services = [
   { id: "1", name: "Web Sitesi Yapımı", description: "Ekibimiz tarafından işinize özel olarak tasarlanmış tümyazılımı bize ait bir site yaratılır.", imageUrl: "/src/assets/logo.png" },
-  { id: "2", name: "E-ticaret", description: "Shopify gibi e-ticaret siteleri'nin kurulumu sağlanır.", imageUrl: "/src/assets/logo.png" },
+  { id: "2", name: "E-ticaret", description: "Shopify gibi e-ticaret siteleri'nin kurulumu sağlanır.", imageUrl: "src/assets/logo.png" },
   { id: "3", name: "Facebook ADS Manager Kurulumu", description: "En iyi reklam optimizasyonu için FaceBook ADS Manager hesabınızın kurulumunu yaparız.", imageUrl: "/src/assets/logo.png" },
   { id: "4", name: "Dijital Pazarlama", description: "Oteller için entegre sistemler.", imageUrl: "/src/assets/logo.png" },
   { id: "5", name: "Sosyal Medya Yönetimi", description: "Güvenli ve sağlam çözümler.", imageUrl: "/src/assets/logo.png" },
