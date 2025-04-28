@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 import İletisim from '@/pages/iletisim';
 import Home from '@/pages/home';
-import Cozum from '@/pages/cozum';
+import Urun from '@/pages/urunlerimiz';
 import Hakkimizda from '@/pages/hakkimizda';
 import Referans from '@/pages/referans';
 import Ucret from '@/pages/ucretler';
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/ucretler" element={<Ucret />} />
         <Route path="/iletisim" element={<İletisim />} />
         <Route path="/referans" element={<Referans />} />
-        <Route path="/cozumlerimiz" element={<Cozum />} />
+        <Route path="/urunlerimiz" element={<Urun />} />
         <Route path="/hakkimizda" element={<Hakkimizda />} />
         <Route path="*" element={<P404 />} />
       </Routes>
