@@ -3,60 +3,49 @@
  * @license Apache-2.0
  */
 
-
-//Node modeles
 import { motion } from "motion/react";
-
-
 import { brands } from "@/assets";
-import * as variants from '@/lib/motionVariants';
+import * as variants from "@/lib/motionVariants";
 
 const Brand = () => {
   return (
-<section className="section">
-<div className="container max-w-screen-lg"> 
-    
-<motion.p  variants={variants.fadeInUp} 
-initial="start"
-whileInView="end"
-viewport={{  once:true    }}
-className="text-center mb-4 md:mb-6">
-    
-    
-Çözüm Ortaklarımız</motion.p>
+    <section className="section w-full">
+      <div className="w-full max-w-screen-2xl mx-auto px-4">
+        <motion.p
+          variants={variants.fadeInUp}
+          initial="start"
+          whileInView="end"
+          viewport={{ once: true }}
+          className="text-center mb-4 md:mb-6"
+        >
+          Çözüm Ortaklarımız
+        </motion.p>
 
-<motion.div  
-
-variants={variants.staggerContainer} 
-initial="start"
-whileInView="end"
-viewport={{  once:true    }}
-className="flex justify-center flex-wrap gap-5 md:gap-10 ">
-
-
-{brands.map((brand,index) =>(
-
-<motion.figure key={index} variants={variants.fadeInUp}> 
-  <img 
-    src={brand} 
-    alt="brands"
-    className="w-[100px] h-[100px] object-contain filter brightness-0"  
-  />
-</motion.figure>
-
-
-
-))}
-
-</motion.div>
-    
-
-
-</div>
-
-</section>
-
+        {/* Kaydırma Alanı */}
+        <div className="relative overflow-hidden w-full">
+          <motion.div
+            className="flex gap-24 animate-marquee whitespace-nowrap w-full"
+            initial={{ x: 0 }}
+            animate={{ x: "-100%" }}
+            transition={{
+              repeat: Infinity,
+              duration: 60, // Yavaş geçiş
+              ease: "linear",
+            }}
+          >
+            {[...brands, ...brands].map((brand, index) => (
+              <img
+                key={index}
+                src={brand}
+                alt={`Brand ${index + 1}`}
+                className="w-24 h-16 object-contain filter brightness-0 flex-shrink-0"
+              />
+            ))}
+          </motion.div>
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default Brand
+export default Brand;
