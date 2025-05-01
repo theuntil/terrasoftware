@@ -11,9 +11,10 @@ import brand2 from '@/assets/Meta-Logo.png';
 import brand3 from '@/assets/Shopify_Logo.png';
 import brand4 from '@/assets/TikTok_logo.svg.png';
 import ikas from "@/assets/Ikas_Logo.png";
+import stripe from "@/assets/stripe.svg";
 
 
-const brands = [ikas,brand1, brand2, brand3, brand4];
+const brands = [ikas,brand1, brand2, brand3, brand4,stripe];
 
 export {
   favicon,

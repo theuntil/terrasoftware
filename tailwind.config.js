@@ -7,7 +7,6 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-
   theme: {
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
@@ -22,15 +21,6 @@ export default {
       },
       spacing: {
         '100': '25rem',
-      },
-      keyframes: {
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-50%)' }, // iki set yan yana olduğu için %50 kayma
-        },
-      },
-      animation: {
-        marquee: 'marquee 40s linear infinite',
       },
       colors: {
         background: "hsl(0, 0%, 100%)",

@@ -3,9 +3,10 @@ import { Button } from '@/components/ui/button';
 // 🔽 Resimleri import ediyoruz
 import IkasLogo from '@/assets/Ikas_Logo.png';
 import IconSite from '@/assets/icon_site.png';
-import MetaUrun from '@/assets/meta_urun.png';
+import meta from '@/assets/hesap_kurulum.png';
 import DijitalPazarlama from '@/assets/dijital_pazarlama.png';
-import Logo from '@/assets/logo.png';
+import mavi from '@/assets/mavi.png';
+import ai from '@/assets/ai.png';
 
 const services = [
   {
@@ -21,28 +22,28 @@ const services = [
     imageUrl: IconSite,
   },
   {
-    id: "3",
-    name: "Facebook ADS Manager Kurulumu",
-    description: "En iyi reklam optimizasyonu için FaceBook ADS Manager hesabınızın kurulumunu yaparız.",
-    imageUrl: MetaUrun,
-  },
-  {
     id: "4",
     name: "Dijital Pazarlama",
     description: "Markanızın dijital medya'da var olmasını sağlayalım!",
     imageUrl: DijitalPazarlama,
   },
   {
+    id: "3",
+    name: "Facebook ADS Manager Kurulumu",
+    description: "En iyi reklam optimizasyonu için FaceBook ADS Manager hesabınızın kurulumunu yaparız.",
+    imageUrl: meta,
+  },
+  {
     id: "5",
     name: "Sosyal Medya Yönetimi",
-    description: "Markanızın tüm sosyal medya süreçlerini profesyonelce yönetelim, dijital dünyada daha güçlü ve etkili bir varlık kazanın.",
-    imageUrl: Logo,
+    description: "Markanızın tüm sosyal medya süreçlerini profesyonelce yönetelim; post,hikaye,hesap yönetimi... Dijital dünyada daha güçlü ve etkili bir varlık kazanın.",
+    imageUrl: mavi,
   },
   {
     id: "6",
     name: "Özel Çözümler",
     description: "İhtiyaçlarınıza özel çözümler.",
-    imageUrl: Logo,
+    imageUrl: ai,
   },
 ];
 
