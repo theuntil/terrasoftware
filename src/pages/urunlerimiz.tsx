@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 // 🔽 Resimleri import ediyoruz
 import IkasLogo from '@/assets/Ikas_Logo.png';
 import IconSite from '@/assets/icon_site.png';
-import MetaUrun from '@/assets/Meta_urun.png';
+import MetaUrun from '@/assets/meta_urun.png';
 import DijitalPazarlama from '@/assets/dijital_pazarlama.png';
 import Logo from '@/assets/logo.png';
 
