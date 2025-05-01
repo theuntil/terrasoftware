@@ -1,11 +1,11 @@
 import { Button } from '@/components/ui/button';
 
 const services = [
-  { id: "1", name: "Web Sitesi Yapımı", description: "Ekibimiz tarafından işinize özel olarak tasarlanmış tümyazılımı bize ait bir site yaratılır.", imageUrl: "/src/assets/logo.png" },
-  { id: "2", name: "E-ticaret", description: "Shopify gibi e-ticaret siteleri'nin kurulumu sağlanır.", imageUrl: "src/assets/logo.png" },
-  { id: "3", name: "Facebook ADS Manager Kurulumu", description: "En iyi reklam optimizasyonu için FaceBook ADS Manager hesabınızın kurulumunu yaparız.", imageUrl: "/src/assets/logo.png" },
-  { id: "4", name: "Dijital Pazarlama", description: "Oteller için entegre sistemler.", imageUrl: "/src/assets/logo.png" },
-  { id: "5", name: "Sosyal Medya Yönetimi", description: "Güvenli ve sağlam çözümler.", imageUrl: "/src/assets/logo.png" },
+  { id: "1", name: "İkas ile E-ticaret", description: "Gelişmiş İkas alt yapısıyla e-ticaret serüveninizde yanınızda olalım.", imageUrl: "@src/assets/Ikas_Logo.png" },
+  { id: "2", name: "Kurumsal Web Sitesi", description: "Deneyimli ekibimizle işinize en uygun web sitesini yapalım.", imageUrl: "assets/icon_site.png" },
+  { id: "3", name: "Facebook ADS Manager Kurulumu", description: "En iyi reklam optimizasyonu için FaceBook ADS Manager hesabınızın kurulumunu yaparız.", imageUrl: "/src/assets/Meta_urun.png" },
+  { id: "4", name: "Dijital Pazarlama", description: "Markanızın dijital medya'da var olmasını sağlayalım!", imageUrl: "src/assets/dijital_pazarlama.png" },
+  { id: "5", name: "Sosyal Medya Yönetimi", description: "Markanızın tüm sosyal medya süreçlerini profesyonelce yönetelim, dijital dünyada daha güçlü ve etkili bir varlık kazanın.", imageUrl: "/src/assets/logo.png" },
   { id: "6", name: "Özel Çözümler", description: "İhtiyaçlarınıza özel çözümler.", imageUrl: "/src/assets/logo.png" },
 ];
 
@@ -20,7 +20,7 @@ const Hizmetlerimiz = () => {
             className="border-2 border-gray-300 text-foreground rounded-xl p-10 hover:border-primary transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             {/* Resim kısmı */}
-            <div className="w-full mb-6 flex justify-center items-center">
+            <div className="w-36 mb-6 flex justify-center items-center">
               <img
                 src={service.imageUrl} // Yolu /src/assets/logo.png olarak güncelledik
                 alt={service.name}

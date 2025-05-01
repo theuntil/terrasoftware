@@ -1,47 +1,34 @@
-/**
- * @copyright 2025 @thehref
- * @license Apache-2.0
- */
-
-import { motion } from "motion/react";
-import { brands } from "@/assets";
-import * as variants from "@/lib/motionVariants";
+import { brands } from "@/assets"; // brands: dizi içinde logo görselleri (örn: ['/logo1.svg', '/logo2.svg'])
 
 const Brand = () => {
   return (
     <section className="section w-full">
       <div className="w-full max-w-screen-2xl mx-auto px-4">
-        <motion.p
-          variants={variants.fadeInUp}
-          initial="start"
-          whileInView="end"
-          viewport={{ once: true }}
-          className="text-center mb-4 md:mb-6"
-        >
+        <p className="text-center mb-4 md:mb-6 font-medium text-l">
           Çözüm Ortaklarımız
-        </motion.p>
+        </p>
 
-        {/* Kaydırma Alanı */}
         <div className="relative overflow-hidden w-full">
-          <motion.div
-            className="flex gap-24 animate-marquee whitespace-nowrap w-full"
-            initial={{ x: 0 }}
-            animate={{ x: "-100%" }}
-            transition={{
-              repeat: Infinity,
-              duration: 60, // Yavaş geçiş
-              ease: "linear",
-            }}
-          >
-            {[...brands, ...brands].map((brand, index) => (
+          <div className="flex w-max animate-marquee">
+            {/* 1. Set */}
+            {brands.map((brand, index) => (
               <img
                 key={index}
                 src={brand}
                 alt={`Brand ${index + 1}`}
-                className="w-24 h-16 object-contain filter brightness-0 flex-shrink-0"
+                className="w-24 h-16 mx-12 object-contain filter brightness-0"
               />
             ))}
-          </motion.div>
+            {/* 2. Set (Kopya) */}
+            {brands.map((brand, index) => (
+              <img
+                key={`copy-${index}`}
+                src={brand}
+                alt={`Brand Copy ${index + 1}`}
+                className="w-24 h-16 mx-12 object-contain filter brightness-0"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -91,16 +91,16 @@ const Hero = () => {
         className="flex items-center justify-center md:flex-row md:justify-start gap-6 mt-5 md:mt-10"
       >
         {/* İletişime Geç Butonu */}
-        <Button className="px-6 py-5 text-sm font-normal hover:bg-foreground  md:w-auto">
+         <a href="/iletisim"> <Button className="px-6 py-5 text-sm font-normal hover:bg-foreground  md:w-auto">
           İletişime Geç
-        </Button>
+        </Button></a>
 
         {/* Ürünlerimiz Butonu */}
-        <Button
+        <a href="/urunlerimiz"><Button
           className="px-6 py-5 text-sm font-normal bg-white text-black border hover:bg-foreground hover:text-white  md:w-auto"
         >
           Ürünlerimiz
-        </Button>
+        </Button></a>
       </motion.div>
     </div>
 

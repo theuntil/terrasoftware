@@ -1,4 +1,3 @@
-import { space } from "postcss/lib/list";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
@@ -21,17 +20,17 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      spacing: {
+        '100': '25rem',
+      },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' }, // iki set yan yana olduğu için %50 kayma
         },
       },
       animation: {
         marquee: 'marquee 40s linear infinite',
-      },
-      spacing: {
-        '100': '25rem',
       },
       colors: {
         background: "hsl(0, 0%, 100%)",
