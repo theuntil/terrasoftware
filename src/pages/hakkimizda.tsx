@@ -31,6 +31,11 @@ const AboutPage = () => {
           <Button variant="outline">İletişime geç!</Button>
         </Link>
       </div>
+
+
+    
+
+      
     </div>
   );
 };

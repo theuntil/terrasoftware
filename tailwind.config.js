@@ -25,6 +25,7 @@ export default {
       colors: {
         background: "hsl(0, 0%, 100%)",
         foreground: "hsl(0, 0%, 0%)",
+        ikas:"hsl(74.5, 100%, 62.7%)",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

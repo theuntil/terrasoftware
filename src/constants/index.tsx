@@ -108,14 +108,17 @@ export const footerData = {
       title: 'Hızlı Linkler',
       items: [
         {
-          href: '/cozumlerimiz',
-          label: 'Çözümlerimiz',
+          href: '/urunlerimiz',
+          label: 'Ürünlerimiz',
         },
         {
           href: '/ucretler',
           label: 'Ücretler',
         },
-      
+        {
+          href: '/ikas',
+          label: 'İkas ile E-Ticaret',
+        }
       
       ],
     },

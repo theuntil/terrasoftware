@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom'; // React Router Link importu
 
 // 🔽 Resimleri import ediyoruz
 import IkasLogo from '@/assets/Ikas_Logo.png';
@@ -14,36 +15,42 @@ const services = [
     name: "İkas ile E-ticaret",
     description: "Gelişmiş İkas alt yapısıyla e-ticaret serüveninizde yanınızda olalım.",
     imageUrl: IkasLogo,
+    link: "/ikas" // Bağlantı ekledik
   },
   {
     id: "2",
     name: "Kurumsal Web Sitesi",
     description: "Deneyimli ekibimizle işinize en uygun web sitesini yapalım.",
     imageUrl: IconSite,
+    link: "/terra-web-sitesi" // Bağlantı ekledik
   },
   {
     id: "4",
     name: "Dijital Pazarlama",
     description: "Markanızın dijital medya'da var olmasını sağlayalım!",
     imageUrl: DijitalPazarlama,
+    link: "/dijital-pazarlama" // Bağlantı ekledik
   },
   {
     id: "3",
     name: "Facebook ADS Manager Kurulumu",
     description: "En iyi reklam optimizasyonu için FaceBook ADS Manager hesabınızın kurulumunu yaparız.",
     imageUrl: meta,
+    link: "/facebook-ads-manager" // Bağlantı ekledik
   },
   {
     id: "5",
     name: "Sosyal Medya Yönetimi",
     description: "Markanızın tüm sosyal medya süreçlerini profesyonelce yönetelim; post,hikaye,hesap yönetimi... Dijital dünyada daha güçlü ve etkili bir varlık kazanın.",
     imageUrl: mavi,
+    link: "/sosyal-medya-yonetimi" // Bağlantı ekledik
   },
   {
     id: "6",
     name: "Özel Çözümler",
     description: "İhtiyaçlarınıza özel çözümler.",
     imageUrl: ai,
+    link: "/ozel-cozumler" // Bağlantı ekledik
   },
 ];
 
@@ -53,7 +60,8 @@ const Hizmetlerimiz = () => {
       <h1 className="text-3xl lg:text-4xl font-light text-center mb-10 text-foreground">Hizmetlerimiz</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
         {services.map((service) => (
-          <div
+          <Link
+            to={service.link} // Link ile yönlendirme ekledik
             key={service.id}
             className="border-2 border-gray-300 text-foreground rounded-xl p-10 hover:border-primary transition-all duration-300 ease-in-out transform hover:scale-105"
           >
@@ -66,7 +74,7 @@ const Hizmetlerimiz = () => {
             </div>
             <h2 className="text-2xl font-semibold mb-4">{service.name}</h2>
             <p className="text-gray-600">{service.description}</p>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -85,3 +93,4 @@ const Hizmetlerimiz = () => {
 };
 
 export default Hizmetlerimiz;
+
