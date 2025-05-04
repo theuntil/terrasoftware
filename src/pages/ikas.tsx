@@ -1,5 +1,7 @@
 import Hero from '@/components/heroikas';
+import Hero2 from '@/components/heropart';
 import SSS from '@/components/sssikas';  // SSS bileşenini import ettik
+import Tablo from '@/components/tabloikas';
 
 
 import kargo from '@/assets/ikas/download (2).png';
@@ -46,7 +48,9 @@ const services = [
 const HomePage = () => {
   return (
     <>
+      
       <Hero />
+      <Hero2 />
 
       <section className="bg-background text-foreground py-12 pb-20 px-4">
         {/* Hizmet Kartları */}
@@ -71,14 +75,14 @@ const HomePage = () => {
       </section>
 
    
-      <div className="bg-ikas w-full h-[200px] flex flex-col justify-center items-center text-center p-8 md:p-20">
+      <div className="bg-ikas w-full h-[200px] flex flex-col justify-center items-center text-center   mb-12 p-8 md:p-20">
         <h1 className="text-5xl md:text-7xl font-bold text-slate-950 mb-4">
           İkas'ta Beklenmedik Ücretler Yok!
         </h1>
 
       </div>
 
-     
+      <Tablo />
 
       <SSS />
 

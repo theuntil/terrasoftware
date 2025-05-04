@@ -11,9 +11,9 @@ import ikasLogo from "@/assets/Ikas_Logo.png";
 // ✅ Sabit içerik burada
 const heroData = {
   sectionSubtitle: "Neden İkas?",
-  sectionTitle: " ile gerçek E-ticaret!",
+  sectionTitle: " ile E-Ticaret yapın!",
   sectionText:
-    "İkas ile ürün yükleme sınırı ve trafik sınırı olmadan dilediğiniz gibi teknik bilgi olmadan satış yapabilir, ödemelerinizi ertesi gün almaya başlayabilirsiniz!",
+    "İkas ile ürün yükleme sınırı ve trafik sınırı olmadan dilediğiniz gibi satış yapabilir, ödemelerinizi ertesi gün almaya başlayabilirsiniz!",
 };
 
 const heroChildVariant: Variants = {
