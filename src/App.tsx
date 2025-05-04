@@ -11,6 +11,7 @@ import Referans from '@/pages/referans';
 import Ucret from '@/pages/ucretler';
 import P404 from '@/pages/p404';
 import İkass from '@/pages/ikas';
+import Shopify from '@/pages/shopify';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/urunlerimiz" element={<Urun />} />
         <Route path="/hakkimizda" element={<Hakkimizda />} />
         <Route path="/ikas" element={<İkass />} />
+        <Route path="/shopify" element={<Shopify />} />
         <Route path="*" element={<P404 />} />
       </Routes>
       <Footer />

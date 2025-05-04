@@ -8,7 +8,7 @@ import meta from '@/assets/hesap_kurulum.png';
 import DijitalPazarlama from '@/assets/dijital_pazarlama.png';
 import mavi from '@/assets/mavi.png';
 import ai from '@/assets/ai.png';
-
+import shopify from '@/assets/Shopify_Logo.png';
 const services = [
   {
     id: "1",
@@ -17,6 +17,14 @@ const services = [
     imageUrl: IkasLogo,
     link: "/ikas" // Bağlantı ekledik
   },
+  {
+    id: "7",
+    name: "Shopify ile E-ticaret",
+    description: "Global pazarda kedini ispatlamış Shopify alt yapısıyla e-ticaret serüveninizde yanınızda olalım.",
+    imageUrl: shopify,
+    link: "/shopify" // Bağlantı ekledik
+  },
+ 
   {
     id: "2",
     name: "Kurumsal Web Sitesi",

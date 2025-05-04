@@ -1,5 +1,5 @@
 /**
- * @copyright 2025 @thehref
+ * @copyright 2025 @thehref @terrayazilim.com
  * @license Apache-2.0
  */
 
@@ -119,7 +119,7 @@ const Hero = () => {
           width={1468}
           height={815}
           alt="Hero Banner"
-          className="w-full h-auto object-cover rounded-2xl"
+          className="w-full h-auto object-cover "
           loading="lazy"
         />
       </motion.figure>

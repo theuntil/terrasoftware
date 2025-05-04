@@ -14,7 +14,7 @@ const Logo = () => {
   <img
   src={logo}
   alt="TerraYazılım Logo"
-  className="w-24 sm:w-32 h-auto"
+  className="w-24 sm:w-31 h-auto"
 />
 
   </a>
