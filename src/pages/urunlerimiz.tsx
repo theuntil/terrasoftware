@@ -30,7 +30,7 @@ const services = [
     name: "Kurumsal Web Sitesi",
     description: "Deneyimli ekibimizle işinize en uygun web sitesini yapalım.",
     imageUrl: IconSite,
-    link: "/terra-web-sitesi" // Bağlantı ekledik
+    link: "/web-sitesi" // Bağlantı ekledik
   },
   {
     id: "4",

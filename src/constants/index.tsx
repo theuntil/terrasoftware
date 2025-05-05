@@ -21,10 +21,6 @@ export const navMenu: MenuItem[] = [
     label: 'Ürünlerimiz',
   },
   {
-    href: 'ucretler',
-    label: 'Ücretler',
-  },
-  {
     href: 'hakkimizda',
     label: 'Hakkımızda',
   },
@@ -112,8 +108,8 @@ export const footerData = {
           label: 'Ürünlerimiz',
         },
         {
-          href: '/ucretler',
-          label: 'Ücretler',
+          href: '/web-sitesi',
+          label: 'Web Sitesi kur',
         },
         {
           href: '/ikas',
@@ -143,7 +139,7 @@ export const footerData = {
     },
     
   ],
-  copyright: '©2025 Powered by AdnanÖZEN',
+  copyright: '©2025 Powered by AdnanÖzen',
   socialLinks: [
 
     {

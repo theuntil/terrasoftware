@@ -8,6 +8,8 @@ import { useRef } from 'react';
 import { motion, Variants, useScroll, useSpring, useTransform } from "motion/react";
 import { heroBanner } from "@/assets";
 import { Button } from "@/components/ui/button";
+import { PiArrowCircleRightLight } from "react-icons/pi";
+
 
 
 const heroChildVariant: Variants = {
@@ -87,21 +89,27 @@ const Hero = () => {
       </motion.p>
 
       <motion.div
-        variants={heroChildVariant}
-        className="flex items-center justify-center md:flex-row md:justify-start gap-6 mt-5 md:mt-10"
-      >
-        {/* İletişime Geç Butonu */}
-         <a href="/iletisim"> <Button className="px-6 py-5 text-sm font-normal hover:bg-foreground  md:w-auto">
-          İletişime Geç
-        </Button></a>
+  variants={heroChildVariant}
+  className="flex items-center justify-center md:flex-row md:justify-start gap-6 mt-5 md:mt-10"
+>
+  {/* İletişime Geç Butonu */}
+  <a href="/iletisim">
+    <Button className="px-6 py-5 text-sm font-normal md:w-auto">
+      İletişime Geç
+    </Button>
+  </a>
 
-        {/* Ürünlerimiz Butonu */}
-        <a href="/urunlerimiz"><Button
-          className="px-6 py-5 text-sm font-normal bg-white text-black border hover:bg-foreground hover:text-white  md:w-auto"
-        >
-          Ürünlerimiz
-        </Button></a>
-      </motion.div>
+  {/* Ürünlerimiz Butonu */}
+  <a href="/urunlerimiz" className="flex items-center">
+    <h1
+      className="ml-4 mr-1 py-5 text-sm font-normal bg-white text-black hover:bg-white hover:underline md:w-auto"
+    >
+      Ürünlerimiz
+    </h1>
+    <PiArrowCircleRightLight className=" text-xl" />
+  </a>
+</motion.div>
+
     </div>
 
     {/* 2. div - Görsel Bölümü */}

@@ -8,7 +8,7 @@ import Home from '@/pages/home';
 import Urun from '@/pages/urunlerimiz';
 import Hakkimizda from '@/pages/hakkimizda';
 import Referans from '@/pages/referans';
-import Ucret from '@/pages/ucretler';
+import Web from '@/pages/website';
 import P404 from '@/pages/p404';
 import İkass from '@/pages/ikas';
 import Shopify from '@/pages/shopify';
@@ -19,7 +19,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ucretler" element={<Ucret />} />
+        <Route path="/web-sitesi" element={<Web />} />
         <Route path="/iletisim" element={<İletisim />} />
         <Route path="/referans" element={<Referans />} />
         <Route path="/urunlerimiz" element={<Urun />} />

@@ -27,7 +27,7 @@ export default {
         foreground: "hsl(0, 0%, 0%)",
         ikas:"hsl(74.5, 100%, 62.7%)",
         shopify:"hsl(82, 47%, 51%)",
-        gri:"#1F2937",
+        gri:"#0f0d21",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
