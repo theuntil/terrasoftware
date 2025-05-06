@@ -10,13 +10,14 @@ export default defineConfig({
     },
   },
   server: {
-    // Sunucu ayarları
     watch: {
       usePolling: true,
     },
     host: true,
-    port: 5173, // Varsayılan port, isteğe göre değiştirilebilir
-    open: true, // Tarayıcıda otomatik açılır
-    // historyApiFallback: true,React Router SPA yönlendirme desteği
+    port: 5173,
+    open: true,
+  },
+  build: {
+    chunkSizeWarningLimit: 1000, // uyarı sınırı 1000 KB olarak ayarlandı
   },
 });
