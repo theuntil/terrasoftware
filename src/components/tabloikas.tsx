@@ -15,7 +15,7 @@ const PricingTable = () => {
   const plans = [
     {
       name: "Temel",
-      price: "₺48.000",
+      price: "₺58.000",
       period: "12 ay Taksit / 4.850,00 TL (yaklaşık olarak)",
       features: [
         "Sınırsız ürün",
@@ -33,7 +33,7 @@ const PricingTable = () => {
     },
     {
       name: "Rand Plus",
-      price: "₺118.000",
+      price: "₺128.000",
       period: "12 ay Taksit / 9.850,00 TL (yaklaşık olarak)",
       features: [
         "Gelişmiş kampanya altyapısı",
